@@ -1,0 +1,23 @@
+#header {
+  margin: 3% auto 3%;
+}
+
+#headcontainer {
+  background-color: #e63946;
+  margin: 0px auto 1%;
+  color: #f1faee;
+}
+
+figcaption {
+  margin-bottom: 2%;
+}
+
+#bodycontainer {
+  background-color: #a8dadc;
+  padding: 2%;
+}
+
+#image {
+  display: block;
+  margin: 0px auto 0px auto !important;
+}

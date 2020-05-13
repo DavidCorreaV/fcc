@@ -1,0 +1,58 @@
+body::before {
+  content: '';
+z-index: -1;
+  background-image: linear-gradient(
+      -45deg,
+      rgba(199, 21, 133, 0.8),
+      rgba(255, 69, 0, 0.7)
+    ),
+    url("https://i.ibb.co/PG0Rw5k/empty-gray-road-under-white-clouds-3041347.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  color: #DDDDDD;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+#description, form label, div p {
+  font-size: 1.5em;
+  margin-top: 2%;
+}
+
+#formdiv {
+  background-color: rgba(133,20,75,0.7);
+  border-radius: 5px;
+  color: #DDDDDD;
+}
+
+#number {
+  max-width: 150px;
+}
+
+div div p, #comments {
+  margin: auto 2% auto 2%;
+}
+#comments{
+overflow: hidden;
+left: 6%;
+}
+.streaming {
+  font-size: 1.2em;
+}
+
+@media (max-width: 991px) {
+  #comments{
+  overflow: hidden;
+  left: 1%;
+  width:94%;
+  }
+}

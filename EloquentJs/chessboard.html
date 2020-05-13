@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    let cb = "",
+      size = 8,
+      lm = true;
+    for (let j = 0; j < size; j++) {
+      for (let i = 0; i < size; i++) {
+        if (lm) {
+          cb += " ";
+        } else {
+          cb += "#";
+        }
+        lm = !lm;
+      }
+      cb += "\n";
+      lm = !lm;
+    }
+    console.log(cb);
+
+    size = 8;
+    let board = "";
+    for (let y = 0; y < size; y++) {
+      for (let x = 0; x < size; x++) {
+        if ((x + y) % 2 == 0) {
+          board += " ";
+        } else {
+          board += "#";
+        }
+      }
+      board += "\n";
+    }
+    console.log(board);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+  <main class="container">
+    <header class="row">
+      <div class="col-lg-12 text-center">
+        <h1 id="title">Music Genre Survey Form</h1>
+        <p id="description">Thanks for helping us by sharing your opinion</p>
+      </div>
+    </header>
+
+    <div class="col-lg-12" id="formdiv">
+      <form class="form-group" action="index.html" method="post" id="survey-form">
+        <label id="name-label" for="your Name">Name</label>
+        <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Your name" required>
+        <label id="email-label" for="email">Email</label>
+        <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Your email" required>
+        <div class="row">
+          <div class="col-lg-6">
+            <label for="music" id="number-label">How many songs do you listen in a day?</label>
+            <input type="number" class="form-control" id="number" aria-describedby="email" placeholder="0" required min="0" max="99">
+          </div>
+          <div class="col-lg-6 form-group">
+            <label for="dropdown" id="dropdown-label">Select your favorite genre</label>
+            <select class="dropdown form-control" name="dropdown" id="dropdown" required>
+              <option selected value="Rock">Rock</option>
+              <option value="Pop">Pop</option>
+              <option value="HipHop">Hip Hop</option>
+              <option value="Country">Country</option>
+              <option value="rnb">R&B</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group col-lg-6">
+            <div class="row">
+              <p>What music streaming service do you currently use?</p>
+              <label class="col-lg-12 streaming">
+                <input name="streaming" value="spotify" type="radio" class="input-radio" checked />Spotify</label>
+              <label class="col-lg-12 streaming">
+                <input name="streaming" value="GooglePlay" type="radio" class="input-radio" />Google Play Music</label>
+              <label class="col-lg-12 streaming">
+                <input name="streaming" value="Othernone" type="radio" class="input-radio" />Other/none</label>
+            </div>
+
+
+          </div>
+          <div class="form-group col-lg-6">
+            <div class="row">
+              <p>What music streaming service have you used in the past?</p>
+              <label class="col-lg-12 streaming">
+                <input name="pstreaming" value="spotify" type="checkbox" class="input-checkbox" checked />Spotify</label>
+              <label class="col-lg-12 streaming">
+                <input name="pstreaming" value="GooglePlay" type="checkbox" class="input-checkbox" />Google Play Music</label>
+              <label class="col-lg-12 streaming">
+                <input name="pstreaming" value="Othernone" type="checkbox" class="input-checkbox" />Other/none</label>
+            </div>
+
+            </div>
+            <div class="form-group col-lg-12 text-center">
+              <div class="row text-center">
+                <p class="col-lg-12">What is your favorite feature of your current streaming platform?</p>
+                <textarea id="comments" class="input-textarea col-lg-10" name="comment" placeholder="Enter your comment here..."></textarea>
+              </div>
+            </div>
+            <div class="form-group col-lg-12 text-center">
+      <button type="submit" id="submit" class="submit-button col-lg-4 btn btn-secondary">
+        Submit
+      </button>
+    </div>
+      </form>
+    </div>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
