@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function reverseArray(string) {
+      let r = [];
+      for (item of string){
+        r.unshift(item);
+      }
+      return r;
+    }
+
+// no funciona, los valores deben modificarse 1 a 1, arrayValue no modifica x en este caso. Los objetos son inmutables pero
+// sus propiedades no lo son ni los valores de estas.
+    function reverseArrayInPlace(arrayValue) {
+      var arrayValue = reverseArray(arrayValue);
+      return arrayValue;
+    }
+
+    function reverseAIP(arrayValue) {
+      let inv = reverseArray(arrayValue)
+      console.log(inv);
+      for(i=0;i< arrayValue.length; i++) {
+      arrayValue[i] = inv[i];
+       }
+            return arrayValue;
+    }
+
+    function reversePure(array) {
+      for (let i=0;i<Math.floor(array.length/2);i++) {
+      let sav = array[i];
+      array[i]=array[array.length-1-i];
+      array[array.length-1-i] = sav;
+      }
+
+      return array;
+    }
+
+  </script>
+</body>
+
+</html>

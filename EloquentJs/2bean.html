@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function countChar(word,x) {
+      let c=0, r=0;
+      while (word[c]!= undefined) {
+        if(word[c]==x){
+        r+=1;
+      }
+        c+=1;
+
+      }
+
+return r;
+
+    }
+
+    function countBs(x) {
+      let r = countChar(x,"B")
+      return r;
+    }
+
+    function countAny(word,x){
+      let r=countChar(word,(x.toUpperCase()));
+      r += countChar(word,(x.toLowerCase()));
+      return r;
+    }
+    </script>
+</body>
+
+</html>

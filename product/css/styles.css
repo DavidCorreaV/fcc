@@ -1,0 +1,21 @@
+#header-img {
+  width: 100px;
+  height: 100px;
+}
+body {
+  padding-top: 120px;
+}
+
+#nav-bar {
+  background-color: white !important;
+}
+
+h1, #main-content {
+  display: inline-flex !important;
+}
+
+@media (max-width: 768px) {
+  #services, #pricing {
+    width: 100%;
+  }
+}

@@ -1,0 +1,98 @@
+
+#heading {
+  background-image: linear-gradient(73deg, #3a3d40 0%, #011627 100%);
+    background-color: ;
+}
+
+main {
+  background-color: #2ec4b6;
+}
+
+.welcome-section {
+  height: 100vh;
+  display: flex;
+   flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+
+}
+
+.headbox {
+  margin: auto auto auto auto;
+}
+
+#david {
+  animation-name: david;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  }
+
+#animate, #title, #sub {
+  color: transparent;
+  animation-name: appear;
+  animation-fill-mode: forwards;
+}
+
+
+#animate {
+  animation-duration: 7s;
+  animation-delay: 3s;
+}
+
+#title {
+  animation-duration: 2s;
+}
+
+#sub {
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+#hi {
+  animation-name: hi;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
+#sub {
+  animation-name: hi;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+@keyframes appear {
+  from {
+    color: transparent;
+  }
+
+  to {
+    color: #2ec4b6;
+  }
+}
+
+@keyframes david {
+  from {
+    font-size:2em;
+  }
+
+  to {
+  font-size:1em;
+  }
+}
+
+@keyframes hi {
+  0% {
+    color: transparent;
+  }
+
+  50% {
+  color: #fdfffc
+}
+
+100% {
+  color: #2ec4b6
+
+}
+}

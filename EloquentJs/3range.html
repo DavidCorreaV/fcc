@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function rangeArr(x, y) {
+      let r = [];
+      for (i = x; i <= y; i++) {
+        r.push(i);
+      }
+      return r;
+    }
+
+    function sum(array) {
+      let total = 0;
+      for (number of array){
+        total+=number;
+      }
+      return total;
+    }
+
+    function step(x,y,s){
+      let r = [];
+      if (s>0){
+      for (i = x; i <= y; i+=s) {
+        r.push(i);
+      }}
+      else if (s<0){
+        for (i = x; i >= y; i+=s) {
+          r.push(i);
+      }} else {
+        r=(x + " ... " + y);
+      }
+      return r;
+    }  
+
+  </script>
+</body>
+
+</html>
