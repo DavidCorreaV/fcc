@@ -1,7 +1,52 @@
 
 #heading {
   background-image: linear-gradient(73deg, #3a3d40 0%, #011627 100%);
-    background-color: ;
+}
+
+#navbar {
+  background-color: #9C0F1B  !important;
+  color: #FDFFFC !important;
+  border-bottom: 1vh solid #640407;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+  paddding: 0px 0px 0px 0px;
+  font-family: 'Baloo 2', sans-serif;
+}
+
+h5 {
+  font-family: Righteous, sans-serif;
+}
+
+.btn, .footer {
+  margin: 1% auto 0px auto;
+  text-decoration: none;
+}
+
+#footer {
+  margin: 3% auto 0px auto;
+
+}
+
+#more2, #more {
+  color: #FDFFFC;
+  margin: 2% auto 2% auto;
+  font-family: Righteous, sans-serif;
+
+}
+
+#copyright {
+  margin: 2% auto 0px auto;
+  padding: 6% auto 6% auto;
+  color: #FDFFFC;
+}
+
+
+.links {
+  /* background-image: linear-gradient(62deg, #551404 0%, #e71d36 100%); */
+    background-color: #011627 ;
+    margin: 2% auto 0px auto;
 }
 
 main {
@@ -23,6 +68,10 @@ main {
   margin: auto auto auto auto;
 }
 
+.project-tile {
+margin: 3% auto 3% auto;
+}
+
 #david {
   animation-name: david;
   animation-fill-mode: forwards;
@@ -37,17 +86,23 @@ main {
 
 
 #animate {
-  animation-duration: 7s;
-  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 3em;
 }
 
 #title {
   animation-duration: 2s;
+  font-family: Righteous, sans-serif;
+  font-size: 4.5em;
 }
 
 #sub {
   animation-duration: 5s;
-  animation-delay: 1s;
+  animation-delay: 1.2s;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 3.5em;
 }
 
 #hi {
@@ -60,6 +115,52 @@ main {
   animation-name: hi;
   animation-fill-mode: forwards;
   animation-duration: 2s;
+}
+
+.project-tile {
+  opacity: 0%;
+}
+
+.card1 {
+  animation-name: appear2;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 3.5s;
+}
+
+.card2 {
+  animation-name: appear2;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 3.7s;
+}
+
+.card3 {
+  animation-name: appear2;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 3.9s;
+}
+
+.card4 {
+  animation-name: appear2;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 4.1s;
+}
+
+.card5 {
+  animation-name: appear2;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 4.3s;
+}
+
+.card6 {
+  animation-name: appear2;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 4.5s;
 }
 
 @keyframes appear {
@@ -95,4 +196,40 @@ main {
   color: #2ec4b6
 
 }
+}
+
+@keyframes appear2 {
+0% {
+    opacity: 0;
+    transform: translate(0%,15%);
+  }
+
+30%{
+    opacity: 0.05;
+  }
+
+  100%{
+      opacity: 1;
+      transform: translate(0%,0%)
+    }
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    border-top: 1vh solid #640407;
+    padding-left: 10px !important;
+}
+
+    .navbar-toggler {
+      margin-left: 10px !important;
+      margin-bottom: 10px !important;
+    }
+
+  #navbar  {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+
+  }
+
 }
